@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: fastapi
+spec:
+  selector:
+    app: fastapi #musi pasować do labels z deployment.yaml 
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80 
+
+
+
+
